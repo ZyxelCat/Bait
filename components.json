@@ -1,0 +1,149 @@
+{
+  "_note": "Части Байта для Base-версии. URL проверяются по порядку: официальный источник, затем наша копия на GitHub Releases (ZyxelCat/Bite-Appdistrib-rezerv-downloads, тег components-b12376).",
+  "parts": {
+    "engine-cpu": {
+      "file": "engine-cpu.zip",
+      "size": 25116197,
+      "version": "b12376",
+      "sha256": "f685542d9bec82679a15ceeb10c339fe3b6040e95dfcd384907bf69dc64e9c2b",
+      "dest": "engine",
+      "urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/llama-b12376-bin-win-cpu-x64.zip",
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/engine-cpu.zip"
+      ]
+    },
+    "engine-cuda": {
+      "file": "engine-cuda.zip",
+      "size": 319401664,
+      "version": "b12376",
+      "sha256": "4797397130a64965024088d1da1464b029553bf1ecbd3ea8da1d7e09bad7f01a",
+      "dest": "engine",
+      "urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/llama-b12376-bin-win-cuda-12.4-x64.zip",
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/engine-cuda.zip"
+      ]
+    },
+    "cudart-cuda": {
+      "file": "cudart-cuda.zip",
+      "size": 391443627,
+      "version": "b12376",
+      "sha256": "8c79a9b226de4b3cacfd1f83d24f962d0773be79f1e7b75c6af4ded7e32ae1d6",
+      "dest": "engine",
+      "urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/cudart-llama-bin-win-cuda-12.4-x64.zip",
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/cudart-cuda.zip"
+      ]
+    },
+    "python-embed": {
+      "file": "python-3.11.9-embed-amd64.zip",
+      "size": 11249023,
+      "version": "3.11.9",
+      "sha256": "009d6bf7e3b2ddca3d784fa09f90fe54336d5b60f0e0f305c37f400bf83cfd3b",
+      "dest": "voice-runtime",
+      "write": [
+        {
+          "path": "python311._pth",
+          "text": "python311.zip\n.\nLib\\site-packages\nimport site\n"
+        }
+      ],
+      "urls": [
+        "https://www.python.org/ftp/python/3.11.9/python-3.11.9-embed-amd64.zip",
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/python-3.11.9-embed-amd64.zip"
+      ]
+    },
+    "vosk-model": {
+      "file": "vosk-model-ru-0.22.zip",
+      "size": 1559419132,
+      "version": "ru-0.22",
+      "dest": "voice-runtime",
+      "rename": { "from": "vosk-model-ru-0.22", "to": "model" },
+      "write": [
+        {
+          "path": "model/.bait-model",
+          "text": "vosk-model-ru-0.22"
+        }
+      ],
+      "urls": [
+        "https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip"
+      ]
+    },
+    "vosk-model-en": {
+      "file": "vosk-model-en-us-0.22.zip",
+      "size": 1913365522,
+      "version": "en-us-0.22",
+      "dest": "voice-runtime",
+      "rename": { "from": "vosk-model-en-us-0.22", "to": "model-en" },
+      "write": [
+        {
+          "path": "model-en/.bait-model",
+          "text": "vosk-model-en-us-0.22"
+        }
+      ],
+      "urls": [
+        "https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip"
+      ]
+    },
+    "voice-pkgs": {
+      "file": "voice-pkgs.zip",
+      "size": 169804515,
+      "version": "2026.11",
+      "sha256": "262aad806498b84b68a11823d7af6c0d979169348b78db5e52742b2f9104cc4d",
+      "dest": "voice-runtime/Lib/site-packages",
+      "urls": [
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/voice-pkgs.zip"
+      ]
+    },
+    "silero-hub": {
+      "file": "silero-hub.zip",
+      "size": 35216607,
+      "version": "v5",
+      "sha256": "85635ec8da731a46c4fbeebe695ebeb2b71c5f7bd5800b05ccd17eb3e957bb92",
+      "dest": "voice-runtime/silero",
+      "urls": [
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/silero-hub.zip"
+      ]
+    },
+    "univer-cli": {
+      "file": "univer-cli.zip",
+      "size": 105109506,
+      "version": "0.6.0",
+      "sha256": "f8eae1c98b3ad600e79b89d25cada0a7777233a7e7fc020214c469b738f8a8a3",
+      "dest": "univer/univer-cli",
+      "urls": [
+        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/univer-cli.zip"
+      ]
+    }
+  },
+  "components": {
+    "engine-cpu": {
+      "title": "движок для процессора",
+      "parts": ["engine-cpu"],
+      "ready": ["engine/llama-server.exe"]
+    },
+    "engine-cuda": {
+      "title": "движок для видеокарты NVIDIA",
+      "parts": ["engine-cuda", "cudart-cuda"],
+      "ready": ["engine/llama-server.exe", "engine/cublasLt64_12.dll"]
+    },
+    "voice": {
+      "title": "голос (микрофон и озвучка)",
+      "parts": ["python-embed", "vosk-model", "voice-pkgs", "silero-hub"],
+      "ready": [
+        "voice-runtime/python.exe",
+        "voice-runtime/model/.bait-model",
+        "voice-runtime/Lib/site-packages/torch",
+        "voice-runtime/silero/hub"
+      ]
+    },
+    "voice-en": {
+      "title": "Английская речь (распознавание)",
+      "parts": ["vosk-model-en"],
+      "ready": ["voice-runtime/model-en/.bait-model"]
+    },
+    "univer": {
+      "title": "офис (Excel и Word)",
+      "parts": ["univer-cli"],
+      "ready": ["univer/univer-cli/dist/bin.js"]
+    }
+  }
+}
