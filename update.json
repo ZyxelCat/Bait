@@ -1,6 +1,6 @@
 {
-  "version": "0.1.2",
-  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.2/Bait-Base-Internet-Setup-0.1.2.exe",
-  "notes": "Новый чат кнопкой + у вкладок, крупный + без бесед, исправлен текст версии",
-  "sha256": "f550fdfcf920623a11ad163069cbc1d49c1111fe343573fd10778c2d9b63a7f4"
+  "version": "0.1.3",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.3/Bait-Base-Internet-Setup-0.1.3.exe",
+  "notes": "Полная очистка поля чата при закрытии всех бесед",
+  "sha256": "a2aabe254f60e4ba2d82fb215e93eb07ea77631eb54f92c952b2ae0968528279"
 }
