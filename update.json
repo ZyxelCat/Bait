@@ -1,6 +1,6 @@
-{
-  "version": "0.1.0",
-  "url": "",
-  "notes": "Текущая версия. Сюда попадает новая версия при выпуске.",
-  "sha256": ""
+﻿{
+  "version": "0.1.1",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.1/Bait-Base-Internet-Setup-0.1.1.exe",
+  "notes": "Автообновление, история ввода, вкладки, исправление закрытия",
+  "sha256": "373ed8cc048a9835e2aac6166b618a036d4a6b6e2c1ee58f81825ae8ef8a8c09"
 }
