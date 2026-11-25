@@ -3,35 +3,35 @@
   "parts": {
     "engine-cpu": {
       "file": "engine-cpu.zip",
-      "size": 25116197,
-      "version": "b12376",
-      "sha256": "f685542d9bec82679a15ceeb10c339fe3b6040e95dfcd384907bf69dc64e9c2b",
+      "size": 25219691,
+      "version": "b12716",
+      "sha256": "3be4f4801c4804abbae1231cfc4aff8bfe8abae21df3f1ca3b4b550057871324",
       "dest": "engine",
       "urls": [
-        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/llama-b12376-bin-win-cpu-x64.zip",
-        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/engine-cpu.zip"
+        "https://github.com/ZyxelCat/Bait/releases/download/engine-b12716/llama-b12716-bin-win-cpu-x64.zip",
+        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/llama-b12376-bin-win-cpu-x64.zip"
       ]
     },
     "engine-cuda": {
       "file": "engine-cuda.zip",
-      "size": 319401664,
-      "version": "b12376",
-      "sha256": "4797397130a64965024088d1da1464b029553bf1ecbd3ea8da1d7e09bad7f01a",
+      "size": 358605327,
+      "version": "b12716",
+      "sha256": "2bf3a5b7f4862ce0b82ecfe35b3ef1e9b2b0fe6a878c1908dccc73baa0c216bc",
       "dest": "engine",
       "urls": [
-        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/llama-b12376-bin-win-cuda-12.4-x64.zip",
-        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/engine-cuda.zip"
+        "https://github.com/ZyxelCat/Bait/releases/download/engine-b12716/llama-b12716-bin-win-cuda-12.4-x64.zip",
+        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/llama-b12376-bin-win-cuda-12.4-x64.zip"
       ]
     },
     "cudart-cuda": {
       "file": "cudart-cuda.zip",
       "size": 391443627,
-      "version": "b12376",
+      "version": "b12716",
       "sha256": "8c79a9b226de4b3cacfd1f83d24f962d0773be79f1e7b75c6af4ded7e32ae1d6",
       "dest": "engine",
       "urls": [
-        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/cudart-llama-bin-win-cuda-12.4-x64.zip",
-        "https://github.com/ZyxelCat/Bite-Appdistrib-rezerv-downloads/releases/download/components-b12376/cudart-cuda.zip"
+        "https://github.com/ZyxelCat/Bait/releases/download/engine-b12716/cudart-llama-bin-win-cuda-12.4-x64.zip",
+        "https://github.com/ggml-org/llama.cpp/releases/download/b12376/cudart-llama-bin-win-cuda-12.4-x64.zip"
       ]
     },
     "python-embed": {
@@ -56,7 +56,10 @@
       "size": 1559419132,
       "version": "ru-0.22",
       "dest": "voice-runtime",
-      "rename": { "from": "vosk-model-ru-0.22", "to": "model" },
+      "rename": {
+        "from": "vosk-model-ru-0.22",
+        "to": "model"
+      },
       "write": [
         {
           "path": "model/.bait-model",
@@ -72,7 +75,10 @@
       "size": 1913365522,
       "version": "en-us-0.22",
       "dest": "voice-runtime",
-      "rename": { "from": "vosk-model-en-us-0.22", "to": "model-en" },
+      "rename": {
+        "from": "vosk-model-en-us-0.22",
+        "to": "model-en"
+      },
       "write": [
         {
           "path": "model-en/.bait-model",
@@ -117,17 +123,32 @@
   "components": {
     "engine-cpu": {
       "title": "движок для процессора",
-      "parts": ["engine-cpu"],
-      "ready": ["engine/llama-server.exe"]
+      "parts": [
+        "engine-cpu"
+      ],
+      "ready": [
+        "engine/llama-server.exe"
+      ]
     },
     "engine-cuda": {
       "title": "движок для видеокарты NVIDIA",
-      "parts": ["engine-cuda", "cudart-cuda"],
-      "ready": ["engine/llama-server.exe", "engine/cublasLt64_12.dll"]
+      "parts": [
+        "engine-cuda",
+        "cudart-cuda"
+      ],
+      "ready": [
+        "engine/llama-server.exe",
+        "engine/cublasLt64_12.dll"
+      ]
     },
     "voice": {
       "title": "голос (микрофон и озвучка)",
-      "parts": ["python-embed", "vosk-model", "voice-pkgs", "silero-hub"],
+      "parts": [
+        "python-embed",
+        "vosk-model",
+        "voice-pkgs",
+        "silero-hub"
+      ],
       "ready": [
         "voice-runtime/python.exe",
         "voice-runtime/model/.bait-model",
@@ -137,13 +158,21 @@
     },
     "voice-en": {
       "title": "Английская речь (распознавание)",
-      "parts": ["vosk-model-en"],
-      "ready": ["voice-runtime/model-en/.bait-model"]
+      "parts": [
+        "vosk-model-en"
+      ],
+      "ready": [
+        "voice-runtime/model-en/.bait-model"
+      ]
     },
     "univer": {
       "title": "офис (Excel и Word)",
-      "parts": ["univer-cli"],
-      "ready": ["univer/univer-cli/dist/bin.js"]
+      "parts": [
+        "univer-cli"
+      ],
+      "ready": [
+        "univer/univer-cli/dist/bin.js"
+      ]
     }
   }
 }
