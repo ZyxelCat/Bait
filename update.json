@@ -1,6 +1,6 @@
 {
-  "version": "0.1.6",
-  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.6/Bait-Base-Internet-Setup-0.1.6.exe",
-  "notes": "Новости читаются вслух целиком, с паузами между новостями; первая новость стала заголовком, дальше список 1-12",
-  "sha256": "7f9396718c015769e6f73357dfd95d3fa856bb62ea7620a41deb0ca774c64d88"
+  "version": "0.1.7",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.7/Bait-Base-Internet-Setup-0.1.7.exe",
+  "notes": "Заголовок новостей вернулся на место; паузы 1.5 с между новостями и 1 с после номера",
+  "sha256": "33b65577f9f60aebdf9957db9ce25566740a2f2ae96ad09e614a57ab7dc8c4f2"
 }
