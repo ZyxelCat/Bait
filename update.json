@@ -1,6 +1,6 @@
 {
-  "version": "0.1.8",
-  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.8/Bait-Base-Internet-Setup-0.1.8.exe",
-  "notes": "Паузы в озвучке: 1.5 с между новостями и 1 с после номера; заголовок новостей на своём месте",
-  "sha256": "60e3cb3cf1886f05e7b328366035304b0f2e759ef54e92c3b8f655eebc1c6d7d"
+  "version": "0.1.9",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.9/Bait-Base-Internet-Setup-0.1.9.exe",
+  "notes": "Заголовок новостей всегда «Вот что произошло в мире криптовалют сегодня»; паузы 1.2 с между новостями и 0.7 с после номера",
+  "sha256": "eb44aca8421b588a5cede20d54ecd4e10e7c157313daebf8c93ff3ebc38e1f0e"
 }
