@@ -1,6 +1,6 @@
 {
-  "version": "0.1.10",
-  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.10/Bait-Base-Internet-Setup-0.1.10.exe",
-  "notes": "Курсы монет: названия жирным, понимает «почём монета APT» и русские названия; резервный источник цен CoinPaprika",
-  "sha256": "a7e1f775139e6161aaee2560e81b0161d465cdc56bf0d73d3a946d5435a00e29"
+  "version": "0.1.11",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.11/Bait-Base-Internet-Setup-0.1.11.exe",
+  "notes": "Курсы монет: жирные названия, понимает «почём монета APT» и русские названия без помощи модели",
+  "sha256": "db242d4c2a2b033bbd29cabab341f2c0d0547bb3f021c48b2e5ba6983c44c521"
 }
