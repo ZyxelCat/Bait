@@ -1,6 +1,6 @@
 {
-  "version": "0.1.11",
-  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.11/Bait-Base-Internet-Setup-0.1.11.exe",
-  "notes": "Курсы монет: жирные названия, понимает «почём монета APT» и русские названия без помощи модели",
-  "sha256": "db242d4c2a2b033bbd29cabab341f2c0d0547bb3f021c48b2e5ba6983c44c521"
+  "version": "0.1.12",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.12/Bait-Base-Internet-Setup-0.1.12.exe",
+  "notes": "Курсы монет всегда с жирными названиями; «цены на крипту» показывает популярные монеты",
+  "sha256": "bf459739032962c29e8cb2f3105713505446ff645e0de9afff98eb4257244682"
 }
