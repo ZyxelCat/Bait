@@ -1,6 +1,6 @@
 {
-  "version": "0.1.9",
-  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.9/Bait-Base-Internet-Setup-0.1.9.exe",
-  "notes": "Заголовок новостей всегда «Вот что произошло в мире криптовалют сегодня»; паузы 1.2 с между новостями и 0.7 с после номера",
-  "sha256": "eb44aca8421b588a5cede20d54ecd4e10e7c157313daebf8c93ff3ebc38e1f0e"
+  "version": "0.1.10",
+  "url": "https://github.com/ZyxelCat/Bait/releases/download/v0.1.10/Bait-Base-Internet-Setup-0.1.10.exe",
+  "notes": "Курсы монет: названия жирным, понимает «почём монета APT» и русские названия; резервный источник цен CoinPaprika",
+  "sha256": "a7e1f775139e6161aaee2560e81b0161d465cdc56bf0d73d3a946d5435a00e29"
 }
